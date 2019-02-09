@@ -13,9 +13,11 @@ class CandiesList extends Component {
 
   componentDidMount() {
     this.props.getAllCandies();
+    this.setState({ candies: this.props.candies });
   }
 
   componentDidUpdate(prevProps) {
+    // debugger;
     if (this.props.candies.length !== prevProps.candies.length) {
       this.setState({ candies: this.props.candies });
     }
