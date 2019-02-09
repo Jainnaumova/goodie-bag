@@ -10,7 +10,7 @@
 
 body::after {
   content: "";
-  background: url('bg.jpg');
+  background: url("bg.jpg");
   opacity: 0.1;
   top: 0;
   left: 0;
@@ -35,3 +35,7 @@ main {
   flex-direction: column;
   justify-content: center;
 }
+
+/* .container {
+  color: #333333;
+} */

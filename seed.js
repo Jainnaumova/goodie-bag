@@ -22,6 +22,9 @@ const candies = [{
   imageUrl: 'http://www.ocsaccess.com/admin/clientfiles/ucsne/images/xlarge/mm%20choc.jpg'
 }];
 
+// const getRandomImg = () => candies[Math.floor(Math.random() * candies.length)].imageUrl
+
+
 const seed = async () => {
   try {
     await db.sync({force: true})
@@ -41,3 +44,5 @@ const seed = async () => {
 }
 
 seed();
+
+// export default getRandomImg;
