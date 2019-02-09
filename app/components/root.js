@@ -1,12 +1,13 @@
 import React from "react";
 import { HashRouter, Route } from "react-router-dom";
 import CandiesList from "./CandiesList";
+import Navbar from "./Navbar";
 
 export default () => {
   return (
     <HashRouter>
       <div>
-        <nav>Goodie Bag</nav>
+        <Navbar />
         <main>
           <div>
             <h1>Welcome to the Goodie Bag!</h1>
@@ -18,5 +19,3 @@ export default () => {
     </HashRouter>
   );
 };
-
-// <Route exact path="/" component={CandiesList} />;

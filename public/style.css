@@ -36,6 +36,18 @@ main {
   justify-content: center;
 }
 
-/* .container {
-  color: #333333;
-} */
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-logo {
+  flex-grow: 2;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: space-around;
+  flex-grow: 1;
+}
