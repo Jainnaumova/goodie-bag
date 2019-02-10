@@ -1,4 +1,8 @@
-import { fetchAllCandies, fetchOneCandy } from "../api/candies.api";
+import {
+  fetchAllCandies,
+  fetchOneCandy,
+  changeQuantity
+} from "../api/candies.api";
 
 // Action Types
 export const GOT_CANDIES_FROM_SERVER = "GOT_CANDIES_FROM_SERVER";
@@ -24,5 +28,10 @@ export const getAllCandies = () => async dispatch => {
 
 export const getOneCandy = id => async dispatch => {
   const candy = await fetchOneCandy(id);
+  dispatch(gotOneCandyFromServer(candy));
+};
+
+export const updateQuantity = (id, quantity) => async dispatch => {
+  const candy = await changeQuantity(id, quantity);
   dispatch(gotOneCandyFromServer(candy));
 };
